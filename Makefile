@@ -1,3 +1,5 @@
+# foundation branch
+
 ######################################
 # For STM32F100C8 on Mars Eclipse using the ARM GNU toolchain
 # Supports both the assembler and C startup code stubs
