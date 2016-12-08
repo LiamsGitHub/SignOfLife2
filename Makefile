@@ -9,7 +9,8 @@
 ################### Project name and sources #####################
 
 NAME=SignOfLife2
-FOUNDATION = /Users/Liam/Eclipse/WorkspaceJan16/Foundation
+#FOUNDATION = /Users/Liam/Eclipse/WorkspaceJan16/Foundation
+FOUNDATION = /Users/Liam/Documents/LiamsDox/Personal/GeekingOut/SoftDvt/Embedded/EclipseMarsFeb2016/WorkspaceJan16/Foundation
 
 C_SOURCES = main.c	# Enter list of all the C source files here
 S_SOURCES = $(FOUNDATION)/startup2.S 	# Enter list of all the assembler source files here
