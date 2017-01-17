@@ -8,7 +8,7 @@
 
 
 //#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/STM32F100.h"
-#include "/Users/Liam/Documents/LiamsDox/Personal/GeekingOut/SoftDvt/Embedded/EclipseMarsFeb2016/WorkspaceJan16/Foundation/STM32F100.h"
+#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/STM32F100.h"
 
 int main(void)
 
