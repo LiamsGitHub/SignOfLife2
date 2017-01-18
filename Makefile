@@ -6,7 +6,10 @@
 # This Makefile imports a generic Makefile at the top of the directory
 #
 ################### Project name and sources #####################
-include filePath
+
+ROOTDIR = ~/Eclipse
+FOUNDATION = $(ROOTDIR)/WorkspaceJan16/Foundation
+TOOLS = $(ROOTDIR)/gcc-arm-none-eabi-5_2-2015q4/bin/
 
 NAME=SignOfLife2
 
