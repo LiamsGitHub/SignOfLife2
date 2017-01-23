@@ -14,7 +14,7 @@ TOOLS = $(ROOTDIR)/gcc-arm-none-eabi-5_2-2015q4/bin/
 NAME=SignOfLife2
 
 C_SOURCES = main.c	# Enter list of all the C source files here
-S_SOURCES = $(FOUNDATION)/startup2.S 	# Enter list of all the assembler source files here
+S_SOURCES = $(FOUNDATION)/STM32F100C8startup.S 	# Enter list of all the assembler source files here
 
 OBJECTS = $(C_SOURCES:.c=.o) $(S_SOURCES:.S=.o)
 OBJDIR = Objects2
@@ -45,7 +45,7 @@ CFLAGS = -mcpu=cortex-m3 -mthumb -Wall -g -c -v
 ASFLAGS = -mcpu=cortex-m3 -mthumb
 
 # Linker Flags 
-LINKER_SCRIPT = $(FOUNDATION)/STM32F100C8v2_std.ld
+LINKER_SCRIPT = $(FOUNDATION)/STM32F100C8.ld
 LDFLAGS=-mthumb -mcpu=cortex-m3 $(NO_SEMIHOST) -T $(LINKER_SCRIPT) # Use std libraries
 
 # Other Stuff
