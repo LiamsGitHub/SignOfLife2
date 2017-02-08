@@ -8,7 +8,7 @@
 
 
 //#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/STM32F100.h"
-#include "/Users/Liam/Eclipse/WorkspaceJan16/Foundation/STM32F100.h"
+#include "../Foundation/STM32F103.h"
 
 int main(void)
 
