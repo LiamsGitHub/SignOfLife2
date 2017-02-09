@@ -19,7 +19,7 @@ ODFLAGS = -d -t
 ################### Build Steps #####################
 
 all:
-	$(CC) -v -mcpu=cortex-m3 -mthumb -g -nostartfiles -T $(FOUNDATION)/STM32F100C8.ld  main.c  StartUp_simple.s -o $(NAME).elf
+	$(CC) -v -mcpu=cortex-m3 -mthumb -g -nostartfiles -T $(FOUNDATION)/STM32F100C8.ld  main.c  StartUp_simple.S -o $(NAME).elf
 	#$(CC) -v -mcpu=cortex-m3 -mthumb -g -nostartfiles -T $(FOUNDATION)/STM32F100C8.ld  main.c  $(FOUNDATION)/STM32F100C8startup.S -o $(NAME).elf
 	$(NM) $(NAME).elf
 	

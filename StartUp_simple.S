@@ -6,34 +6,23 @@
  *
  *******************************************************************************/
 .syntax unified
-.thumb
-
-.section  .isr_vector
-
-vectors:
-			.word __stack
-			.word main
 
 
-// Handler for Reset.
+.global  Default_Handler
+.global  Reset_Handler
+
 .section  .Reset_Handler
 
 Reset_Handler:
-  bl    main 							// Call application entry point
-  bx    lr
+	b		main 							// Call application entry point
 
-
-
-.section  .Default_Handler			// Default handler for exceptions where specific handler has not been written
 
 Default_Handler:
-Infinite_Loop:
-  b  Infinite_Loop 						// Loops here forever to trap an exception
+	b		Default_Handler 						// Loops here forever to trap an exception
 
 .section  .isr_vector
-
 Vectors:
-.word   __stack						/* stack top address */
+.word	__stack						/* stack top address */
 .word   Reset_Handler				/* Reset. First code address after reset */
 .word   Default_Handler        		/* NMI_Handler */
 .word   Default_Handler        		/* HardFault */
