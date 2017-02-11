@@ -34,6 +34,7 @@ int main(void)
 	  GPIOA_BSRR=0x2000400; // Clear PA9, set PA10
 	  for (i=0;i<0x10000;i++);
 
+
       }
 
 }
